@@ -1,0 +1,67 @@
+<div>
+    <input [(ngModel)]="searchText">
+    <button (click)="searchMovie()">Search</button>
+</div>
+<style>
+    table, th, td {
+        border: 1px solid white;
+        border-collapse: collapse;
+    }
+    th, td {
+        background-color: #96D4D4;
+    }
+</style>
+<body>
+    <table style="width:30%">
+    <tr>
+        <th>NameMovie</th>
+        <th>TypeMovie</th>
+        <th>MoviePrice</th>
+        <th>Movieid</th>
+    </tr>
+    <tr>
+        <td>{{ movies.NameMovie}}</td>
+        <td>{{ movies.TypeMovie}}</td>
+        <td>{{ movies.MoviePrice}}</td>
+        <td>{{ movies.Movieid}}</td>
+    </tr>
+</table>
+</body>
+
+<!-- <table *ngIf="movies && movies.length > 0">
+    <thead>
+        <tr>
+            <th>NameMovie</th>
+            <th>TypeMovie</th>
+            <th>MoviePrice</th>
+            <th>Movieid</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let movie of movies">
+            <td>{{ movie.NameMovie}}</td>
+            <td>{{ movie.TypeMovie}}</td>
+            <td>{{ movie.MoviePrice}}</td>
+            <td>{{ movie.Movieid}}</td>
+        </tr>
+    </tbody>
+</table> -->
+
+<!-- <table>
+    <thead>
+        <tr>
+            <th>NameMovie</th>
+            <th>TypeMovie</th>
+            <th>MoviePrice</th>
+            <th>Movieid</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let movie of movies">
+            <td>{{ movie.NameMovie}}</td>
+            <td>{{ movie.TypeMovie}}</td>
+            <td>{{ movie.MoviePrice}}</td>
+            <td>{{ movie.Movieid}}</td>
+        </tr>
+    </tbody>
+</table> -->
